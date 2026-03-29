@@ -1,0 +1,15 @@
+services:
+  mind-tester-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mind-tester-ai
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      PLAYWRIGHT_HEADLESS: "true"
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4.1-mini}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-https://api.openai.com/v1}
+    restart: unless-stopped

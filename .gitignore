@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-lock.yaml
+package-lock.json
+dist
+.env
+temp-tests/*
+artifacts/screenshots/*
+!.gitkeep

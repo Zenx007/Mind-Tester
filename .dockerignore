@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+npm-debug.log*
+artifacts
+temp-tests
+.DS_Store
+.vscode
